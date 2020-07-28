@@ -1,0 +1,42 @@
+header {
+  background-image: url("../assets/banner_new_post.jpg");
+}
+
+form > * {
+  display: block;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+#form-post-title {
+  width: 40vw;
+}
+
+#form-post-title,
+#form-post-content {
+  border: 1px solid #ced4da;
+  padding: 0.5em;
+  border-radius: 5px;
+  color: #495057;
+}
+
+#form-post-content {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 50vh;
+}
+
+#form-post-submit {
+  background-color: #004186;
+  border-color: #004186;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#form-post-submit:hover {
+  background-color: #002349;
+}
