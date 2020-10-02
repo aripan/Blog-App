@@ -138,6 +138,7 @@ footer {
   max-height: 30vh;
   overflow: hidden;
   text-align: justify;
+  padding: 0 0.5em;
 }
 
 .nav-button.new-post-button {
