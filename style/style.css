@@ -103,6 +103,7 @@ footer {
   flex-basis: 40%;
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 
 .post-content {
@@ -177,3 +178,104 @@ footer {
 a.post-link {
   text-decoration: none;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    min-height: 30vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .profile-name,
+  .title {
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  .post-image {
+    grid-area: image;
+  }
+
+  .post-content {
+    grid-area: content;
+    /* background-color: rgba(75, 23, 23, 0.1); */
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+      "image"
+      "content";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  header {
+    min-height: 30vh;
+  }
+
+  .profile-name,
+  .title {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .post-image {
+    grid-area: image;
+  }
+
+  .post-content {
+    grid-area: content;
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+      "image"
+      "content";
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    min-height: 30vh;
+  }
+
+  .profile-name,
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .post-image {
+    grid-area: image;
+  }
+
+  .post-content {
+    grid-area: content;
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+      "image"
+      "content";
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
